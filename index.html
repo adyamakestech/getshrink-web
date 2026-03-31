@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -62,6 +61,7 @@
 
     <main class="flex-grow">
         
+        <!-- Bagian Aplikasi -->
         <section class="container mx-auto px-4 py-8 max-w-5xl">
             
             <div class="ad-placeholder w-full h-[90px] mb-8 rounded mx-auto max-w-[728px]">
@@ -148,41 +148,41 @@
 
         </section>
 
+        <!-- Bagian Artikel SEO (Pembaruan Tahap 1) -->
         <section class="bg-white border-t border-slate-200 py-16">
             <div class="container mx-auto px-4 max-w-4xl">
                 
-                <div class="grid md:grid-cols-2 gap-12 mb-16" id="cara-kerja">
-                    <div>
-                        <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
-                            <i data-lucide="cpu" class="w-6 h-6 text-blue-600"></i>
-                            Bagaimana Cara Kerjanya?
-                        </h2>
-                        <p class="text-slate-600 mb-4 leading-relaxed">
-                            Kebanyakan situs kompresi PDF mengharuskan Anda mengunggah file ke server mereka. Hal ini memakan waktu (terutama jika file besar) dan menimbulkan risiko keamanan data.
-                        </p>
-                        <p class="text-slate-600 leading-relaxed">
-                            <strong>GetShrink</strong> menggunakan teknologi JavaScript modern. Saat Anda memilih file, browser Anda sendirilah yang bekerja "membongkar" PDF tersebut, mengecilkan ukuran gambarnya, dan merakitnya kembali. Semuanya terjadi secara lokal.
-                        </p>
-                    </div>
-                    <div id="keamanan">
-                        <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
-                            <i data-lucide="lock" class="w-6 h-6 text-green-600"></i>
-                            Privasi 100% Terjamin
-                        </h2>
-                        <ul class="space-y-3 text-slate-600">
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
-                                <span><strong>Tanpa Upload:</strong> File Anda tidak pernah dikirim ke internet.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
-                                <span><strong>Tanpa Batas Ukuran:</strong> Karena menggunakan perangkat Anda, tidak ada batasan file maksimal.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
-                                <span><strong>Aman & Cepat:</strong> Proses lebih cepat karena tidak menunggu proses upload & download dari server.</span>
-                            </li>
+                <div class="mb-16" id="cara-kerja">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-8 leading-tight">Panduan Lengkap Mengompres PDF dengan Cepat dan 100% Aman</h2>
+                    
+                    <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
+                        <p>Di era digital saat ini, mengirim dokumen dalam format PDF telah menjadi standar wajib, baik untuk keperluan melamar kerja, mendaftar beasiswa, hingga berbagi dokumen bisnis. Sayangnya, dokumen hasil pemindaian (scan) kamera sering kali memiliki ukuran file yang sangat besar, mencapai puluhan Megabyte (MB). Hal ini tentu akan menyulitkan saat Anda harus mengunggahnya ke portal pendaftaran yang biasanya membatasi ukuran maksimal file (misalnya maksimal 2MB atau 5MB).</p>
+
+                        <p>Menggunakan alat pengecil atau kompresor PDF adalah solusi yang paling tepat. Namun, tahukah Anda bahwa tidak semua situs kompresi PDF aman untuk privasi Anda? Mari kita bahas secara mendalam.</p>
+
+                        <h3 class="text-2xl font-bold text-slate-800 mt-10 mb-4" id="keamanan">1. Mengapa Keamanan Data PDF Sangat Penting?</h3>
+                        <p>Sebagian besar dokumen PDF berisi informasi yang sangat sensitif dan rahasia. Bayangkan Anda sedang mengompres file yang berisi pindaian Kartu Tanda Penduduk (KTP), Kartu Keluarga (KK), buku tabungan, laporan keuangan perusahaan, atau kontrak bisnis. Jika Anda menggunakan situs kompresi PDF online biasa, file Anda akan <strong>diunggah (di-upload) ke server milik pihak ketiga</strong>.</p>
+                        <p>Risiko kebocoran data, pencurian identitas, hingga peretasan sangatlah nyata jika file tersebut tersimpan di server mereka. Oleh karena itulah <strong>GetShrink</strong> diciptakan. Kami menggunakan teknologi mutakhir bernama <em>WebAssembly</em> dan <em>Client-Side JavaScript</em>. Artinya, saat Anda memilih file PDF di alat kami, browser (Chrome, Safari, atau Firefox) Anda sendirilah yang bekerja mengecilkan file tersebut. <strong>Tidak ada satu byte pun dari file Anda yang dikirim ke internet.</strong> 100% diproses secara lokal (offline) di dalam memori perangkat Anda, menjadikannya platform kompresi paling aman saat ini.</p>
+
+                        <h3 class="text-2xl font-bold text-slate-800 mt-10 mb-4">2. Perbedaan Penting: PDF Hasil Scan vs PDF Digital</h3>
+                        <p>Untuk mendapatkan hasil kompresi yang maksimal, Anda harus memahami dua jenis utama file PDF:</p>
+                        <ul class="list-disc pl-6 space-y-3">
+                            <li><strong>PDF Hasil Scan (Pemindaian):</strong> Ini adalah PDF yang dibuat dari hasil jepretan kamera ponsel atau mesin scanner fisik. Secara teknis, ini adalah kumpulan gambar beresolusi tinggi yang dibungkus dalam format PDF. Jenis PDF ini ukurannya sangat besar dan <strong>sangat cocok dikompres menggunakan GetShrink</strong>. Metode kami (Rasterisasi) akan menurunkan ukuran gambar tersebut secara cerdas tanpa membuatnya buram.</li>
+                            <li><strong>PDF Digital (Vektor/Teks):</strong> Ini adalah PDF yang disimpan langsung dari aplikasi pengolah kata seperti Microsoft Word atau Excel. File jenis ini ukurannya secara alami sudah sangat kecil karena hanya berisi baris kode teks. <em>Peringatan:</em> Jika Anda mengompres file PDF jenis ini menggunakan alat kami, ukurannya justru bisa sedikit membengkak karena proses pengubahan teks menjadi gambar.</li>
                         </ul>
+
+                        <h3 class="text-2xl font-bold text-slate-800 mt-10 mb-4">3. Tips Mengecilkan Ukuran PDF Tanpa Merusak Kualitas</h3>
+                        <p>Agar file PDF Anda tetap bisa dibaca dengan jelas oleh pihak penerima, ikuti tips berikut saat menggunakan alat kami:</p>
+                        <ol class="list-decimal pl-6 space-y-3">
+                            <li><strong>Pilih Tingkat Kompresi yang Tepat:</strong> Mulailah dengan opsi <strong>Sedang (Rekomendasi)</strong>. Opsi ini memberikan keseimbangan terbaik antara ukuran file yang kecil dan teks yang masih tajam. Jika masih terlalu besar, barulah gunakan tingkat <strong>Tinggi</strong>.</li>
+                            <li><strong>Pastikan Pencahayaan Foto Baik:</strong> Jika Anda memindai dokumen fisik dengan kamera HP sebelum diubah ke PDF, pastikan pencahayaannya terang (background kertas putih bersih). Semakin bersih latar dokumen, semakin optimal algoritma kami mengecilkan ukurannya.</li>
+                            <li><strong>Hindari Kompresi Berulang:</strong> Jangan mengompres file PDF yang sudah pernah dikompres. Melakukan kompresi berulang kali pada gambar akan memunculkan bercak-bercak piksel yang membuat teks pada dokumen menjadi kabur.</li>
+                        </ol>
+
+                        <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg mt-10">
+                            <h4 class="font-bold text-blue-800 mb-2">Kesimpulan</h4>
+                            <p class="text-blue-700 text-base m-0">Memilih layanan yang mengutamakan privasi seperti GetShrink tidak hanya melindungi identitas Anda dari kejahatan siber, tetapi juga menghemat kuota internet Anda karena prosesnya tidak memerlukan proses <em>upload</em> data yang memakan banyak kuota. Cobalah kompres file Anda sekarang secara gratis!</p>
+                        </div>
                     </div>
                 </div>
 
@@ -196,6 +196,10 @@
                         <div class="border border-slate-200 rounded-lg p-5 bg-slate-50 hover:bg-white transition-colors">
                             <h3 class="font-bold text-slate-800 mb-2">Apakah aplikasi ini gratis?</h3>
                             <p class="text-slate-600 text-sm">Ya, 100% gratis tanpa batasan penggunaan. Kami mendanai operasional website ini melalui iklan yang ditampilkan.</p>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-5 bg-slate-50 hover:bg-white transition-colors">
+                            <h3 class="font-bold text-slate-800 mb-2">Apakah alat ini bisa dipakai di HP (Smartphone)?</h3>
+                            <p class="text-slate-600 text-sm">Tentu saja. Situs kami didesain sangat responsif untuk perangkat seluler. Anda bisa mengompres PDF secara offline langsung dari browser iPhone atau Android Anda tanpa perlu repot mengunduh aplikasi tambahan di App Store atau Play Store.</p>
                         </div>
                     </div>
                 </div>
@@ -516,7 +520,6 @@
                 const date = new Date();
                 const dateString = `${date.getFullYear()}${(date.getMonth()+1).toString().padStart(2,'0')}${date.getDate().toString().padStart(2,'0')}`;
                 
-                // NAMA FILE ZIP UPDATE
                 a.download = `GetShrink_${dateString}.zip`;
                 
                 document.body.appendChild(a);
