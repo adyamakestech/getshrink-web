@@ -38,7 +38,21 @@
             text-align: center;
             overflow: hidden;
         }
+        
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BYL7XVMQ5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8BYL7XVMQ5');
+    </script>
 </head>
 <body class="bg-slate-50 min-h-screen font-sans text-slate-800 flex flex-col">
 
@@ -61,7 +75,6 @@
 
     <main class="flex-grow">
         
-        <!-- Bagian Aplikasi -->
         <section class="container mx-auto px-4 py-8 max-w-5xl">
             
             <div class="ad-placeholder w-full h-[90px] mb-8 rounded mx-auto max-w-[728px]">
@@ -148,7 +161,6 @@
 
         </section>
 
-        <!-- Bagian Artikel SEO (Pembaruan Tahap 1) -->
         <section class="bg-white border-t border-slate-200 py-16">
             <div class="container mx-auto px-4 max-w-4xl">
                 
@@ -224,13 +236,6 @@
             </div>
         </div>
     </footer>
-
-    <style>
-        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 10px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-    </style>
 
     <script>
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
