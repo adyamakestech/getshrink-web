@@ -84,8 +84,8 @@
     <!-- Global Loading Overlay -->
     <div id="globalOverlay" class="fixed inset-0 z-[100] bg-slate-900/70 backdrop-blur-sm hidden flex-col items-center justify-center text-white transition-opacity duration-300 opacity-0">
         <i data-lucide="loader-2" class="w-14 h-14 animate-spin mb-4 text-blue-400"></i>
-        <h2 id="overlayText" class="text-2xl font-bold tracking-tight">Memproses...</h2>
-        <p class="text-slate-300 mt-2 text-sm">Mohon tunggu sebentar</p>
+        <h2 id="overlayText" class="text-2xl font-bold tracking-tight text-center px-4">Memproses...</h2>
+        <p class="text-slate-300 mt-2 text-sm text-center px-4">Mohon tunggu sebentar</p>
     </div>
 
     <!-- Header -->
@@ -112,29 +112,29 @@
         <!-- Background Decoration -->
         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=')] opacity-50 -z-10"></div>
         
-        <section class="container mx-auto px-4 py-12 max-w-5xl z-10">
+        <section class="container mx-auto px-4 py-8 sm:py-12 max-w-5xl z-10">
             
             <!-- Top Ad -->
-            <div class="ad-placeholder w-full h-[90px] mb-12 mx-auto max-w-[728px] shadow-sm">
-                <p class="flex items-center gap-2"><i data-lucide="megaphone" class="w-4 h-4"></i> Ruang Iklan (728x90)</p>
+            <div class="ad-placeholder w-full h-[90px] mb-8 sm:mb-12 mx-auto max-w-[728px] shadow-sm">
+                <p class="flex items-center gap-2 text-xs sm:text-sm"><i data-lucide="megaphone" class="w-4 h-4"></i> Ruang Iklan (728x90)</p>
             </div>
 
             <!-- Hero Copy -->
-            <div class="text-center mb-12">
-                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
-                    Kompres PDF <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">100% Aman</span> & Offline
+            <div class="text-center mb-8 sm:mb-12">
+                <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-slate-900 mb-4 sm:mb-6 tracking-tight leading-tight">
+                    Kompres PDF <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 block sm:inline">100% Aman</span> & Offline
                 </h1>
-                <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                <p class="text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed px-2">
                     Kecilkan ukuran file PDF Anda langsung di dalam browser. Tidak ada file yang diunggah ke server. Rahasia dokumen Anda dijamin aman.
                 </p>
             </div>
 
             <!-- App Interface -->
-            <div class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl shadow-blue-900/5 ring-1 ring-slate-200 overflow-hidden mb-16">
+            <div class="bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl shadow-blue-900/5 ring-1 ring-slate-200 overflow-hidden mb-12 sm:mb-16">
                 
                 <!-- Settings Bar -->
-                <div class="bg-slate-50 border-b border-slate-200 p-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <div class="flex items-center gap-3">
+                <div class="bg-slate-50 border-b border-slate-200 p-4 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex items-center gap-3 w-full sm:w-auto">
                         <div class="bg-white p-1.5 rounded-md shadow-sm border border-slate-200">
                             <i data-lucide="sliders-horizontal" class="w-4 h-4 text-slate-500"></i>
                         </div>
@@ -145,152 +145,158 @@
                     <div class="flex p-1 bg-slate-200/60 rounded-xl w-full sm:w-auto shadow-inner">
                         <label class="flex-1 sm:flex-none cursor-pointer relative">
                             <input type="radio" name="quality" value="0.8" class="radio-peer sr-only">
-                            <div class="px-4 py-2 text-sm text-center rounded-lg text-slate-600 hover:text-slate-900 transition-all duration-200">
-                                Rendah (Resolusi Bagus)
+                            <div class="px-2 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm text-center rounded-lg text-slate-600 hover:text-slate-900 transition-all duration-200">
+                                <span class="font-bold">Rendah</span><span class="hidden md:inline"> (Resolusi Bagus)</span>
                             </div>
                         </label>
                         <label class="flex-1 sm:flex-none cursor-pointer relative">
                             <input type="radio" name="quality" value="0.6" class="radio-peer sr-only" checked>
-                            <div class="px-4 py-2 text-sm text-center rounded-lg text-slate-600 hover:text-slate-900 transition-all duration-200">
-                                Sedang (Rekomendasi)
+                            <div class="px-2 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm text-center rounded-lg text-slate-600 hover:text-slate-900 transition-all duration-200">
+                                <span class="font-bold">Sedang</span><span class="hidden md:inline"> (Rekomendasi)</span>
                             </div>
                         </label>
                         <label class="flex-1 sm:flex-none cursor-pointer relative">
                             <input type="radio" name="quality" value="0.4" class="radio-peer sr-only">
-                            <div class="px-4 py-2 text-sm text-center rounded-lg text-slate-600 hover:text-slate-900 transition-all duration-200">
-                                Tinggi (Ukuran Terkecil)
+                            <div class="px-2 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm text-center rounded-lg text-slate-600 hover:text-slate-900 transition-all duration-200">
+                                <span class="font-bold">Tinggi</span><span class="hidden md:inline"> (Ukuran Terkecil)</span>
                             </div>
                         </label>
                     </div>
                 </div>
 
                 <!-- Dropzone -->
-                <div id="dropZone" class="group p-12 flex flex-col items-center justify-center cursor-pointer hover:bg-blue-50/30 border-2 border-dashed border-slate-300 hover:border-blue-500 m-6 rounded-2xl bg-white transition-all duration-300">
-                    <div class="w-24 h-24 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-6 shadow-inner group-hover:scale-110 group-hover:bg-blue-100 transition-transform duration-300">
-                        <i data-lucide="cloud-upload" class="w-12 h-12 group-hover:-translate-y-1 transition-transform duration-300"></i>
+                <div id="dropZone" class="group p-8 sm:p-12 flex flex-col items-center justify-center cursor-pointer hover:bg-blue-50/30 border-2 border-dashed border-slate-300 hover:border-blue-500 mx-4 my-6 sm:m-6 rounded-2xl bg-white transition-all duration-300">
+                    <div class="w-20 h-20 sm:w-24 sm:h-24 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-5 sm:mb-6 shadow-inner group-hover:scale-110 group-hover:bg-blue-100 transition-transform duration-300">
+                        <i data-lucide="cloud-upload" class="w-10 h-10 sm:w-12 sm:h-12 group-hover:-translate-y-1 transition-transform duration-300"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-slate-800 mb-3 transition-all duration-200">Tarik & Lepas PDF Di Sini</h3>
-                    <p class="text-sm text-slate-500 mb-8 text-center max-w-md leading-relaxed">Mendukung kompresi banyak file sekaligus. Sangat direkomendasikan untuk PDF hasil scan/foto atau dokumen dengan banyak gambar.</p>
-                    <button onclick="document.getElementById('fileInput').click()" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-3.5 px-10 rounded-full shadow-lg shadow-blue-600/30 focus:ring-4 focus:ring-blue-100 transform active:scale-95 transition-all flex items-center gap-2">
+                    <h3 id="dropZoneTitle" class="text-xl sm:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 transition-all duration-200 text-center">Tarik & Lepas PDF Di Sini</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 mb-6 sm:mb-8 text-center max-w-md leading-relaxed px-2">Mendukung kompresi banyak file sekaligus. Sangat direkomendasikan untuk PDF hasil scan/foto atau dokumen dengan banyak gambar.</p>
+                    <button onclick="document.getElementById('fileInput').click()" class="w-full sm:w-auto justify-center bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-3.5 px-10 rounded-xl sm:rounded-full shadow-lg shadow-blue-600/30 focus:ring-4 focus:ring-blue-100 transform active:scale-95 transition-all flex items-center gap-2">
                         <i data-lucide="plus" class="w-5 h-5"></i> Pilih File PDF
                     </button>
                     <input type="file" id="fileInput" multiple accept=".pdf,application/pdf" class="hidden" onchange="handleFileSelect(event)">
                 </div>
 
                 <!-- Queue List -->
-                <div id="fileListContainer" class="p-6 sm:p-8 pt-0 hidden bg-slate-50/50 border-t border-slate-100">
+                <div id="fileListContainer" class="p-4 sm:p-8 pt-0 hidden bg-slate-50/50 border-t border-slate-100">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-                        <h4 class="font-bold text-slate-800 flex items-center gap-2 text-lg">
+                        <h4 class="font-bold text-slate-800 flex items-center gap-2 text-lg w-full sm:w-auto">
                             <i data-lucide="list-todo" class="w-5 h-5 text-indigo-600"></i>
                             Antrean File (<span id="fileCount" class="text-indigo-600">0</span>)
                         </h4>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <div id="selectAllContainer" class="hidden items-center gap-2 border-r border-slate-300 pr-4">
-                                <input type="checkbox" id="selectAllCheckbox" onchange="toggleSelectAll(this.checked)" class="w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 cursor-pointer transition-colors">
+                        
+                        <!-- Mobile Responsive Action Bar -->
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
+                            
+                            <div id="selectAllContainer" class="hidden flex-row items-center justify-between sm:justify-start gap-2 border-b sm:border-b-0 sm:border-r border-slate-200 pb-3 sm:pb-0 sm:pr-4 w-full sm:w-auto">
                                 <label for="selectAllCheckbox" class="text-sm font-bold text-slate-600 cursor-pointer select-none">Pilih Semua</label>
+                                <input type="checkbox" id="selectAllCheckbox" onchange="toggleSelectAll(this.checked)" class="w-5 h-5 sm:w-4 sm:h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 cursor-pointer transition-colors">
                             </div>
-                            <button id="btnDownloadSelected" onclick="downloadSelectedAsZip()" class="hidden text-sm bg-green-600 hover:bg-green-700 text-white py-2.5 px-5 rounded-lg font-bold flex items-center gap-2 shadow-md shadow-green-600/20 hover:-translate-y-0.5 transition-all">
-                                <i data-lucide="folder-archive" class="w-4 h-4"></i> Download ZIP
-                            </button>
-                            <button id="btnCompressAll" onclick="compressAll()" class="text-sm bg-slate-800 hover:bg-slate-900 text-white py-2.5 px-5 rounded-lg font-bold flex items-center gap-2 shadow-md shadow-slate-800/20 hover:-translate-y-0.5 transition-all">
-                                <i data-lucide="zap" class="w-4 h-4"></i> Kompres Semua
-                            </button>
+                            
+                            <div class="grid grid-cols-1 sm:flex gap-3 w-full sm:w-auto">
+                                <button id="btnDownloadSelected" onclick="downloadSelectedAsZip()" class="hidden w-full sm:w-auto justify-center text-sm bg-green-600 hover:bg-green-700 text-white py-3 sm:py-2.5 px-5 rounded-xl sm:rounded-lg font-bold flex items-center gap-2 shadow-md shadow-green-600/20 hover:-translate-y-0.5 transition-all">
+                                    <i data-lucide="folder-archive" class="w-4 h-4"></i> Download ZIP
+                                </button>
+                                <button id="btnCompressAll" onclick="compressAll()" class="w-full sm:w-auto justify-center text-sm bg-slate-800 hover:bg-slate-900 text-white py-3 sm:py-2.5 px-5 rounded-xl sm:rounded-lg font-bold flex items-center gap-2 shadow-md shadow-slate-800/20 hover:-translate-y-0.5 transition-all">
+                                    <i data-lucide="zap" class="w-4 h-4"></i> Kompres Semua
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div id="fileList" class="space-y-3 max-h-[450px] overflow-y-auto pr-3 custom-scrollbar overflow-x-hidden p-1"></div>
+                    <div id="fileList" class="space-y-4 sm:space-y-3 max-h-[450px] overflow-y-auto sm:pr-3 custom-scrollbar overflow-x-hidden p-1"></div>
                 </div>
             </div>
 
             <!-- Bottom Ad -->
-            <div class="ad-placeholder w-full h-[250px] mb-16 mx-auto max-w-[970px] shadow-sm">
-                <p class="flex flex-col items-center gap-2">
-                    <i data-lucide="layout-template" class="w-6 h-6 text-slate-400"></i>
-                    Ruang Iklan Utama (970x250)
+            <div class="ad-placeholder w-full h-[150px] sm:h-[250px] mb-12 sm:mb-16 mx-auto max-w-[970px] shadow-sm">
+                <p class="flex flex-col items-center gap-2 text-xs sm:text-sm">
+                    <i data-lucide="layout-template" class="w-5 h-5 sm:w-6 sm:h-6 text-slate-400"></i>
+                    Ruang Iklan Utama (Responsive)
                 </p>
             </div>
 
         </section>
 
         <!-- SEO Article Section -->
-        <section class="bg-white border-t border-slate-200 py-20 relative overflow-hidden">
+        <section class="bg-white border-t border-slate-200 py-16 sm:py-20 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 -z-10 translate-x-1/2 -translate-y-1/2"></div>
             
             <div class="container mx-auto px-4 max-w-4xl relative z-10">
-                <div class="mb-16" id="cara-kerja">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 leading-tight">Panduan Lengkap Mengompres PDF dengan Cepat dan 100% Aman</h2>
+                <div class="mb-12 sm:mb-16" id="cara-kerja">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 sm:mb-8 leading-tight">Panduan Lengkap Mengompres PDF dengan Cepat dan 100% Aman</h2>
                     
-                    <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
+                    <div class="space-y-4 sm:space-y-6 text-slate-600 leading-relaxed text-base sm:text-lg">
                         <p>Di era digital saat ini, mengirim dokumen dalam format PDF telah menjadi standar wajib, baik untuk keperluan melamar kerja, mendaftar beasiswa, hingga berbagi dokumen bisnis. Sayangnya, dokumen hasil pemindaian (scan) kamera sering kali memiliki ukuran file yang sangat besar, mencapai puluhan Megabyte (MB). Hal ini tentu akan menyulitkan saat Anda harus mengunggahnya ke portal pendaftaran yang biasanya membatasi ukuran maksimal file (misalnya maksimal 2MB atau 5MB).</p>
 
                         <p>Menggunakan alat pengecil atau kompresor PDF adalah solusi yang paling tepat. Namun, tahukah Anda bahwa tidak semua situs kompresi PDF aman untuk privasi Anda? Mari kita bahas secara mendalam.</p>
 
-                        <h3 class="text-2xl font-bold text-slate-800 mt-10 mb-4 flex items-center gap-2" id="keamanan">
-                            <div class="bg-blue-100 p-1.5 rounded-lg text-blue-600"><i data-lucide="shield" class="w-5 h-5"></i></div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-slate-800 mt-8 sm:mt-10 mb-3 sm:mb-4 flex items-center gap-2" id="keamanan">
+                            <div class="bg-blue-100 p-1.5 rounded-lg text-blue-600 shrink-0"><i data-lucide="shield" class="w-5 h-5"></i></div>
                             1. Mengapa Keamanan Data PDF Sangat Penting?
                         </h3>
                         <p>Sebagian besar dokumen PDF berisi informasi yang sangat sensitif dan rahasia. Bayangkan Anda sedang mengompres file yang berisi pindaian Kartu Tanda Penduduk (KTP), Kartu Keluarga (KK), buku tabungan, laporan keuangan perusahaan, atau kontrak bisnis. Jika Anda menggunakan situs kompresi PDF online biasa, file Anda akan <strong>diunggah (di-upload) ke server milik pihak ketiga</strong>.</p>
                         <p>Risiko kebocoran data, pencurian identitas, hingga peretasan sangatlah nyata jika file tersebut tersimpan di server mereka. Oleh karena itulah <strong>GetShrink</strong> diciptakan. Kami menggunakan teknologi mutakhir bernama <em>WebAssembly</em> dan <em>Client-Side JavaScript</em>. Artinya, saat Anda memilih file PDF di alat kami, browser (Chrome, Safari, atau Firefox) Anda sendirilah yang bekerja mengecilkan file tersebut. <strong>Tidak ada satu byte pun dari file Anda yang dikirim ke internet.</strong> 100% diproses secara lokal (offline) di dalam memori perangkat Anda, menjadikannya platform kompresi paling aman saat ini.</p>
 
-                        <h3 class="text-2xl font-bold text-slate-800 mt-10 mb-4 flex items-center gap-2">
-                            <div class="bg-indigo-100 p-1.5 rounded-lg text-indigo-600"><i data-lucide="scan-line" class="w-5 h-5"></i></div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-slate-800 mt-8 sm:mt-10 mb-3 sm:mb-4 flex items-center gap-2">
+                            <div class="bg-indigo-100 p-1.5 rounded-lg text-indigo-600 shrink-0"><i data-lucide="scan-line" class="w-5 h-5"></i></div>
                             2. Perbedaan Penting: PDF Hasil Scan vs PDF Digital
                         </h3>
                         <p>Untuk mendapatkan hasil kompresi yang maksimal, Anda harus memahami dua jenis utama file PDF:</p>
                         <ul class="list-none space-y-4 mt-4">
-                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <strong class="text-slate-800 flex items-center gap-2 mb-1"><i data-lucide="camera" class="w-4 h-4 text-blue-500"></i> PDF Hasil Scan (Pemindaian):</strong> 
+                            <li class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-100">
+                                <strong class="text-slate-800 flex items-center gap-2 mb-2"><i data-lucide="camera" class="w-5 h-5 text-blue-500 shrink-0"></i> PDF Hasil Scan (Pemindaian):</strong> 
                                 Ini adalah PDF yang dibuat dari hasil jepretan kamera ponsel atau mesin scanner fisik. Secara teknis, ini adalah kumpulan gambar beresolusi tinggi yang dibungkus dalam format PDF. Jenis PDF ini ukurannya sangat besar dan <span class="text-green-600 font-medium">sangat cocok dikompres menggunakan GetShrink</span>. Metode kami (Rasterisasi) akan menurunkan ukuran gambar tersebut secara cerdas tanpa membuatnya buram.
                             </li>
-                            <li class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                                <strong class="text-slate-800 flex items-center gap-2 mb-1"><i data-lucide="type" class="w-4 h-4 text-orange-500"></i> PDF Digital (Vektor/Teks):</strong> 
+                            <li class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-100">
+                                <strong class="text-slate-800 flex items-center gap-2 mb-2"><i data-lucide="type" class="w-5 h-5 text-orange-500 shrink-0"></i> PDF Digital (Vektor/Teks):</strong> 
                                 Ini adalah PDF yang disimpan langsung dari aplikasi pengolah kata seperti Microsoft Word atau Excel. File jenis ini ukurannya secara alami sudah sangat kecil karena hanya berisi baris kode teks. <em class="text-orange-600">Peringatan:</em> Jika Anda mengompres file PDF jenis ini menggunakan alat kami, ukurannya justru bisa sedikit membengkak karena proses pengubahan teks menjadi gambar.
                             </li>
                         </ul>
 
-                        <h3 class="text-2xl font-bold text-slate-800 mt-12 mb-4 flex items-center gap-2">
-                            <div class="bg-emerald-100 p-1.5 rounded-lg text-emerald-600"><i data-lucide="lightbulb" class="w-5 h-5"></i></div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-slate-800 mt-10 sm:mt-12 mb-3 sm:mb-4 flex items-center gap-2">
+                            <div class="bg-emerald-100 p-1.5 rounded-lg text-emerald-600 shrink-0"><i data-lucide="lightbulb" class="w-5 h-5"></i></div>
                             3. Tips Mengecilkan Ukuran PDF Tanpa Merusak Kualitas
                         </h3>
                         <p>Agar file PDF Anda tetap bisa dibaca dengan jelas oleh pihak penerima, ikuti tips berikut saat menggunakan alat kami:</p>
-                        <ol class="list-decimal pl-6 space-y-3 font-medium text-slate-700">
-                            <li>Pilih Tingkat Kompresi yang Tepat. <span class="font-normal text-slate-600">Mulailah dengan opsi Sedang. Jika masih terlalu besar, barulah gunakan tingkat Tinggi.</span></li>
-                            <li>Pastikan Pencahayaan Foto Baik. <span class="font-normal text-slate-600">Jika memindai dokumen fisik dengan HP, pastikan background terang dan tidak ada bayangan gelap.</span></li>
-                            <li>Hindari Kompresi Berulang. <span class="font-normal text-slate-600">Jangan mengompres file PDF yang sudah pernah dikompres karena akan membuatnya kabur (pecah).</span></li>
+                        <ol class="list-decimal pl-5 sm:pl-6 space-y-3 font-medium text-slate-700">
+                            <li>Pilih Tingkat Kompresi yang Tepat. <span class="font-normal text-slate-600 block sm:inline mt-1 sm:mt-0">Mulailah dengan opsi Sedang. Jika masih terlalu besar, barulah gunakan tingkat Tinggi.</span></li>
+                            <li>Pastikan Pencahayaan Foto Baik. <span class="font-normal text-slate-600 block sm:inline mt-1 sm:mt-0">Jika memindai dokumen fisik dengan HP, pastikan background terang dan tidak ada bayangan gelap.</span></li>
+                            <li>Hindari Kompresi Berulang. <span class="font-normal text-slate-600 block sm:inline mt-1 sm:mt-0">Jangan mengompres file PDF yang sudah pernah dikompres karena akan membuatnya kabur (pecah).</span></li>
                         </ol>
 
-                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-600 p-6 rounded-r-xl mt-12 shadow-sm">
+                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-600 p-5 sm:p-6 rounded-r-xl mt-10 sm:mt-12 shadow-sm">
                             <h4 class="font-bold text-blue-900 mb-2 flex items-center gap-2">
-                                <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600"></i> Kesimpulan
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 shrink-0"></i> Kesimpulan
                             </h4>
-                            <p class="text-blue-800 text-base m-0 leading-relaxed">Memilih layanan yang mengutamakan privasi seperti GetShrink tidak hanya melindungi identitas Anda dari kejahatan siber, tetapi juga menghemat kuota internet karena prosesnya dilakukan murni di perangkat Anda. Cobalah kompres file penting Anda sekarang tanpa rasa khawatir!</p>
+                            <p class="text-blue-800 text-sm sm:text-base m-0 leading-relaxed">Memilih layanan yang mengutamakan privasi seperti GetShrink tidak hanya melindungi identitas Anda dari kejahatan siber, tetapi juga menghemat kuota internet karena prosesnya dilakukan murni di perangkat Anda. Cobalah kompres file penting Anda sekarang tanpa rasa khawatir!</p>
                         </div>
                     </div>
                 </div>
 
-                <div id="faq" class="mb-8 pt-10 border-t border-slate-100">
-                    <h2 class="text-3xl font-extrabold text-slate-900 mb-8 text-center">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+                <div id="faq" class="mb-8 pt-8 sm:pt-10 border-t border-slate-100">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-6 sm:mb-8 text-center">Pertanyaan yang Sering Diajukan (FAQ)</h2>
                     <div class="grid gap-4">
-                        <div class="border border-slate-200 rounded-xl p-6 bg-white hover:border-blue-300 hover:shadow-md transition-all duration-300">
-                            <h3 class="font-bold text-slate-800 mb-3 text-lg flex items-center gap-2">
-                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-500"></i>
+                        <div class="border border-slate-200 rounded-xl p-5 sm:p-6 bg-white hover:border-blue-300 hover:shadow-md transition-all duration-300">
+                            <h3 class="font-bold text-slate-800 mb-2 sm:mb-3 text-base sm:text-lg flex items-start sm:items-center gap-2">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5 sm:mt-0"></i>
                                 Kenapa ukuran PDF saya malah menjadi lebih besar?
                             </h3>
-                            <p class="text-slate-600">Metode yang kami gunakan (Rasterisasi) sangat optimal untuk PDF hasil jepretan kamera (scan) atau yang penuh gambar. Jika PDF Anda murni berisi teks digital (seperti dari Ms. Word), metode ini mengubah teks tersebut menjadi gambar sehingga bisa membuat ukuran file sedikit membengkak.</p>
+                            <p class="text-slate-600 text-sm sm:text-base pl-7 sm:pl-0">Metode yang kami gunakan (Rasterisasi) sangat optimal untuk PDF hasil jepretan kamera (scan) atau yang penuh gambar. Jika PDF Anda murni berisi teks digital (seperti dari Ms. Word), metode ini mengubah teks tersebut menjadi gambar sehingga bisa membuat ukuran file sedikit membengkak.</p>
                         </div>
-                        <div class="border border-slate-200 rounded-xl p-6 bg-white hover:border-blue-300 hover:shadow-md transition-all duration-300">
-                            <h3 class="font-bold text-slate-800 mb-3 text-lg flex items-center gap-2">
-                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-500"></i>
+                        <div class="border border-slate-200 rounded-xl p-5 sm:p-6 bg-white hover:border-blue-300 hover:shadow-md transition-all duration-300">
+                            <h3 class="font-bold text-slate-800 mb-2 sm:mb-3 text-base sm:text-lg flex items-start sm:items-center gap-2">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5 sm:mt-0"></i>
                                 Apakah aplikasi ini benar-benar gratis?
                             </h3>
-                            <p class="text-slate-600">Ya, 100% gratis selamanya tanpa batasan ukuran file dan batasan jumlah penggunaan per hari. Kami mendanai operasional server web ini melalui ruang iklan yang ditampilkan di halaman.</p>
+                            <p class="text-slate-600 text-sm sm:text-base pl-7 sm:pl-0">Ya, 100% gratis selamanya tanpa batasan ukuran file dan batasan jumlah penggunaan per hari. Kami mendanai operasional server web ini melalui ruang iklan yang ditampilkan di halaman.</p>
                         </div>
-                        <div class="border border-slate-200 rounded-xl p-6 bg-white hover:border-blue-300 hover:shadow-md transition-all duration-300">
-                            <h3 class="font-bold text-slate-800 mb-3 text-lg flex items-center gap-2">
-                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-500"></i>
+                        <div class="border border-slate-200 rounded-xl p-5 sm:p-6 bg-white hover:border-blue-300 hover:shadow-md transition-all duration-300">
+                            <h3 class="font-bold text-slate-800 mb-2 sm:mb-3 text-base sm:text-lg flex items-start sm:items-center gap-2">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5 sm:mt-0"></i>
                                 Apakah alat ini bisa dipakai di HP (Smartphone)?
                             </h3>
-                            <p class="text-slate-600">Tentu saja. Situs kami didesain sangat responsif untuk perangkat seluler. Anda bisa mengompres PDF secara offline langsung dari browser iPhone atau Android Anda tanpa perlu repot mengunduh aplikasi tambahan di App Store atau Play Store.</p>
+                            <p class="text-slate-600 text-sm sm:text-base pl-7 sm:pl-0">Tentu saja. Situs kami didesain sangat responsif untuk perangkat seluler. Anda bisa mengompres PDF secara offline langsung dari browser iPhone atau Android Anda tanpa perlu repot mengunduh aplikasi tambahan di App Store atau Play Store.</p>
                         </div>
                     </div>
                 </div>
@@ -299,16 +305,16 @@
         </section>
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t-4 border-blue-600">
+    <footer class="bg-slate-900 text-slate-400 py-10 sm:py-12 border-t-4 border-blue-600">
         <div class="container mx-auto px-4 max-w-5xl flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
-                <div class="flex items-center justify-center md:justify-start gap-2 text-2xl font-bold text-white mb-3">
+                <div class="flex items-center justify-center md:justify-start gap-2 text-2xl font-bold text-white mb-2 sm:mb-3">
                     <i data-lucide="file-minus-2" class="w-6 h-6 text-blue-500"></i>
                     GetShrink
                 </div>
-                <p class="text-sm">© 2026 Hak Cipta Dilindungi. Solusi kompresi file offline paling aman.</p>
+                <p class="text-xs sm:text-sm">© 2026 Hak Cipta Dilindungi. Solusi kompresi file offline paling aman.</p>
             </div>
-            <div class="flex flex-wrap justify-center gap-6 text-sm font-medium">
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium">
                 <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
                 <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
                 <a href="mailto:admin@getshrink.my.id" class="hover:text-white transition-colors">Contact</a>
@@ -333,13 +339,11 @@
         const selectAllContainer = document.getElementById('selectAllContainer');
         const selectAllCheckbox = document.getElementById('selectAllCheckbox');
 
-        // Fungsi Global Loading Overlay
         function showOverlay(text) {
             const overlay = document.getElementById('globalOverlay');
             const overlayText = document.getElementById('overlayText');
             if (text) overlayText.textContent = text;
             overlay.classList.remove('hidden');
-            // Sedikit jeda agar display:block terender sebelum opacity berubah
             setTimeout(() => {
                 overlay.classList.remove('opacity-0');
             }, 10);
@@ -351,7 +355,7 @@
             overlay.classList.add('opacity-0');
             setTimeout(() => {
                 overlay.classList.add('hidden');
-            }, 300); // Sinkron dengan duration-300 Tailwind
+            }, 300); 
         }
 
         ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
@@ -364,7 +368,6 @@
         function handleFilesInput(inputFiles) {
             if (!inputFiles || inputFiles.length === 0) return;
             
-            // Backup array file sebelum UI berubah
             const filesToProcess = Array.from(inputFiles);
             
             showOverlay('Membaca file PDF...');
@@ -468,71 +471,71 @@
                     if (item.status === 'pending') {
                         statusHtml = `<span class="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">Menunggu...</span>`;
                         actionHtml = `
-                            <button onclick="startCompression(${item.id})" class="text-sm bg-blue-50 hover:bg-blue-600 text-blue-600 hover:text-white py-2 px-4 rounded-xl flex items-center gap-1.5 font-bold transition-colors">
+                            <button onclick="startCompression(${item.id})" class="w-full sm:w-auto justify-center text-sm bg-blue-50 hover:bg-blue-600 text-blue-600 hover:text-white py-2.5 sm:py-2 px-4 rounded-xl flex items-center gap-1.5 font-bold transition-colors">
                                 <i data-lucide="play" class="w-4 h-4"></i> Mulai
                             </button>
-                            <button onclick="removeFile(${item.id})" class="p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-xl transition-colors" title="Hapus antrean">
-                                <i data-lucide="trash-2" class="w-5 h-5"></i>
+                            <button onclick="removeFile(${item.id})" class="w-full sm:w-auto justify-center p-2.5 sm:p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-xl transition-colors border border-slate-100 sm:border-none flex items-center gap-1.5" title="Hapus antrean">
+                                <i data-lucide="trash-2" class="w-4 h-4 sm:w-5 sm:h-5"></i> <span class="text-sm font-bold sm:hidden">Hapus</span>
                             </button>
                         `;
                     } else if (item.status === 'compressing') {
                         statusHtml = `
-                            <div class="flex items-center gap-3 w-32 sm:w-48">
-                                <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                            <div class="flex items-center gap-3 w-full sm:w-48">
+                                <div class="flex-grow bg-slate-100 rounded-full h-2 overflow-hidden">
                                     <div class="progress-bar-fill bg-gradient-to-r from-blue-500 to-indigo-500 h-full rounded-full transition-all duration-300 relative" style="width: ${item.progress}%">
                                         <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
                                     </div>
                                 </div>
-                                <span class="progress-text text-xs text-indigo-600 font-extrabold">${item.progress}%</span>
+                                <span class="progress-text text-xs text-indigo-600 font-extrabold w-8 text-right">${item.progress}%</span>
                             </div>
                         `;
-                        actionHtml = `<span class="text-sm text-indigo-500 flex items-center gap-2 font-bold px-3 py-1.5"><i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> Memproses...</span>`;
+                        actionHtml = `<span class="text-sm text-indigo-500 flex items-center justify-center w-full gap-2 font-bold px-3 py-2 sm:py-1.5 col-span-2"><i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> Memproses...</span>`;
                     } else if (item.status === 'done') {
                         const reducedPercent = Math.round((1 - (item.compressedSize / item.file.size)) * 100);
                         const isSmaller = item.compressedSize < item.file.size;
                         
                         statusHtml = `
-                            <div class="flex items-center gap-2.5">
+                            <div class="flex flex-wrap items-center gap-2">
                                 <span class="text-sm font-extrabold ${isSmaller ? 'text-green-600' : 'text-orange-500'}">
                                     ${formatBytes(item.compressedSize)} 
                                 </span>
-                                <span class="text-xs font-bold px-2 py-1 rounded-md ${isSmaller ? 'bg-green-100 text-green-700' : 'bg-orange-100 text-orange-700'}">
+                                <span class="text-[10px] sm:text-xs font-bold px-2 py-1 rounded-md ${isSmaller ? 'bg-green-100 text-green-700' : 'bg-orange-100 text-orange-700'}">
                                     ${isSmaller ? `↓ Hemat ${reducedPercent}%` : 'Ukuran Naik'}
                                 </span>
                             </div>
                         `;
                         actionHtml = `
-                            <a href="${item.compressedBlobUrl}" download="compressed_${item.file.name}" class="text-sm bg-white border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700 py-2 px-4 rounded-xl flex items-center gap-1.5 font-bold transition-colors shadow-sm">
+                            <a href="${item.compressedBlobUrl}" download="compressed_${item.file.name}" class="w-full sm:w-auto justify-center text-sm bg-white border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700 py-2.5 sm:py-2 px-4 rounded-xl flex items-center gap-1.5 font-bold transition-colors shadow-sm">
                                 <i data-lucide="download" class="w-4 h-4 text-slate-500"></i> Unduh
                             </a>
-                            <button onclick="removeFile(${item.id})" class="p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-xl transition-colors" title="Hapus dari daftar">
-                                <i data-lucide="x" class="w-5 h-5"></i>
+                            <button onclick="removeFile(${item.id})" class="w-full sm:w-auto justify-center p-2.5 sm:p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-xl transition-colors border border-slate-100 sm:border-none flex items-center gap-1.5" title="Hapus dari daftar">
+                                <i data-lucide="x" class="w-4 h-4 sm:w-5 sm:h-5"></i> <span class="text-sm font-bold sm:hidden">Hapus</span>
                             </button>
                         `;
                     } else if (item.status === 'error') {
                         statusHtml = `<span class="text-xs font-bold text-red-600 bg-red-100 px-2.5 py-1 rounded-full">Gagal diproses</span>`;
                         actionHtml = `
-                            <button onclick="removeFile(${item.id})" class="p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-xl transition-colors">
-                                <i data-lucide="trash-2" class="w-5 h-5"></i>
+                            <button onclick="removeFile(${item.id})" class="w-full sm:w-auto col-span-2 justify-center p-2.5 sm:p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-xl transition-colors border border-slate-100 sm:border-none flex items-center gap-1.5">
+                                <i data-lucide="trash-2" class="w-4 h-4 sm:w-5 sm:h-5"></i> <span class="text-sm font-bold sm:hidden">Hapus file</span>
                             </button>
                         `;
                     }
 
                     let checkboxHtml = '';
                     if (item.status === 'done') {
-                        checkboxHtml = `<input type="checkbox" onchange="toggleSelection(${item.id}, this.checked)" ${item.selected ? 'checked' : ''} class="w-5 h-5 text-indigo-600 bg-slate-100 rounded border-slate-300 focus:ring-indigo-500 cursor-pointer flex-shrink-0 mt-1 sm:mt-0 transition-colors">`;
+                        checkboxHtml = `<input type="checkbox" onchange="toggleSelection(${item.id}, this.checked)" ${item.selected ? 'checked' : ''} class="w-6 h-6 sm:w-5 sm:h-5 text-indigo-600 bg-slate-100 rounded border-slate-300 focus:ring-indigo-500 cursor-pointer flex-shrink-0 mt-1 sm:mt-0 transition-colors">`;
                     } else {
-                        checkboxHtml = `<div class="w-5 h-5 flex-shrink-0"></div>`;
+                        checkboxHtml = `<div class="w-6 h-6 sm:w-5 sm:h-5 flex-shrink-0"></div>`;
                     }
 
                     li.innerHTML = `
-                        <div class="flex items-start sm:items-center gap-4 flex-grow overflow-hidden">
+                        <div class="flex items-start sm:items-center gap-3 sm:gap-4 flex-grow overflow-hidden w-full">
                             ${checkboxHtml}
-                            <div class="w-12 h-12 ${item.status === 'done' ? 'bg-gradient-to-br from-green-400 to-green-500 text-white shadow-green-500/30' : 'bg-slate-100 text-slate-400'} rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm transition-all duration-300">
-                                <i data-lucide="${item.status === 'done' ? 'check-circle' : 'file-text'}" class="w-6 h-6"></i>
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 ${item.status === 'done' ? 'bg-gradient-to-br from-green-400 to-green-500 text-white shadow-green-500/30' : 'bg-slate-100 text-slate-400'} rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm transition-all duration-300">
+                                <i data-lucide="${item.status === 'done' ? 'check-circle' : 'file-text'}" class="w-5 h-5 sm:w-6 sm:h-6"></i>
                             </div>
                             <div class="overflow-hidden w-full">
-                                <p class="text-sm font-extrabold text-slate-800 truncate mb-1" title="${item.file.name}">${item.file.name}</p>
+                                <p class="text-sm sm:text-base font-extrabold text-slate-800 truncate mb-1" title="${item.file.name}">${item.file.name}</p>
                                 <div class="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3">
                                     <p class="text-xs font-medium text-slate-400 ${item.status === 'done' ? 'line-through decoration-slate-300' : ''}">${formatBytes(item.file.size)}</p>
                                     ${item.status === 'done' ? '<span class="hidden sm:inline text-slate-200">•</span>' : ''}
@@ -540,7 +543,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-center gap-2 flex-shrink-0 mt-4 sm:mt-0 justify-end w-full sm:w-auto border-t sm:border-t-0 border-slate-100 pt-4 sm:pt-0">
+                        <div class="grid grid-cols-2 sm:flex items-center gap-2 flex-shrink-0 mt-4 sm:mt-0 w-full sm:w-auto border-t sm:border-t-0 border-slate-100 pt-4 sm:pt-0">
                             ${actionHtml}
                         </div>
                     `;
@@ -581,7 +584,6 @@
             }
         }
 
-        // Fungsi baru agar tidak me-render ulang seluruh antrean saat loading berjalan
         function updateProgressUI(id, progress) {
             const itemElement = document.getElementById(`file-item-${id}`);
             if (itemElement) {
@@ -634,8 +636,8 @@
                     newPdf.addImage(imgData, 'JPEG', 0, 0, widthPt, heightPt);
 
                     const progress = Math.round((pageNum / totalPages) * 100);
-                    filesData[index].progress = progress; // Update data tanpa render ulang semua
-                    updateProgressUI(id, progress);       // Hanya ubah baris persentase
+                    filesData[index].progress = progress;
+                    updateProgressUI(id, progress);
                 }
 
                 const blob = newPdf.output('blob');
@@ -668,7 +670,6 @@
             const selectedFiles = filesData.filter(f => f.status === 'done' && f.selected);
             if (selectedFiles.length === 0) return alert("Silakan centang minimal satu file untuk didownload.");
 
-            // Tampilkan Overlay Loading
             showOverlay('Menyiapkan File ZIP...');
 
             try {
@@ -695,7 +696,6 @@
                 console.error("Gagal membuat ZIP:", error);
                 alert("Terjadi kesalahan saat membuat file ZIP.");
             } finally {
-                // Sembunyikan Overlay Loading
                 hideOverlay();
             }
         }
