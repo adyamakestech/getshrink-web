@@ -1,56 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - GetShrink</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body class="bg-slate-50 min-h-screen font-sans text-slate-800 flex flex-col">
+    <style>
+        * { transition: background-color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s, opacity 0.2s; }
+    </style>
 
-    <header class="bg-white border-b border-slate-200">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BYL7XVMQ5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8BYL7XVMQ5');
+    </script>
+</head>
+<body class="bg-slate-50 min-h-screen font-sans text-slate-800 flex flex-col selection:bg-blue-200 selection:text-blue-900 relative">
+
+    <!-- Background Decoration -->
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=')] opacity-50 -z-10 fixed"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 -z-10 translate-x-1/2 -translate-y-1/2 fixed"></div>
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-20">
         <div class="container mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2 text-xl font-bold text-slate-800 hover:text-blue-600">
-                <i data-lucide="file-minus-2" class="w-7 h-7 text-blue-600"></i>
-                Get<span class="text-blue-600">Shrink</span>
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-extrabold text-slate-800 hover:text-blue-600 transition-colors">
+                <div class="bg-gradient-to-br from-blue-600 to-indigo-600 text-white p-1.5 rounded-lg shadow-sm">
+                    <i data-lucide="file-minus-2" class="w-6 h-6"></i>
+                </div>
+                <span class="tracking-tight flex">Get<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Shrink</span></span>
             </a>
-            <a href="index.html" class="text-sm font-medium text-blue-600 hover:underline">Kembali ke Beranda</a>
+            <a href="index.html" class="flex items-center gap-2 bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-blue-700 text-sm font-bold py-2 px-5 rounded-full transition-all hover:shadow-sm">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> <span class="hidden sm:inline">Kembali ke Beranda</span>
+            </a>
         </div>
     </header>
 
-    <main class="flex-grow container mx-auto px-4 py-12 max-w-3xl">
-        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-slate-200">
-            <h1 class="text-3xl font-bold text-slate-900 mb-6">Kebijakan Privasi (Privacy Policy)</h1>
-            <p class="text-slate-500 mb-8 text-sm">Terakhir diperbarui: 31 Maret 2026</p>
+    <!-- Content -->
+    <main class="flex-grow container mx-auto px-4 py-12 sm:py-16 max-w-4xl relative z-10">
+        <div class="bg-white/90 backdrop-blur-sm p-8 sm:p-12 rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl shadow-blue-900/5 ring-1 ring-slate-200">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Kebijakan Privasi (Privacy Policy)</h1>
+            <p class="text-slate-500 mb-10 text-sm sm:text-base font-medium">Terakhir diperbarui: 31 Maret 2026</p>
 
-            <div class="space-y-6 text-slate-600 leading-relaxed">
+            <div class="space-y-6 text-slate-600 leading-relaxed text-base sm:text-lg">
                 <p>Di <strong>GetShrink</strong>, privasi pengunjung kami adalah prioritas utama. Dokumen Kebijakan Privasi ini menguraikan jenis informasi pribadi yang diterima dan dikumpulkan oleh GetShrink dan bagaimana informasi tersebut digunakan.</p>
 
-                <h2 class="text-xl font-bold text-slate-800 mt-8">1. Pemrosesan File (Client-Side)</h2>
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-800 mt-10 mb-4 flex items-center gap-2">
+                    <div class="bg-blue-100 p-1.5 rounded-lg text-blue-600 shrink-0"><i data-lucide="cpu" class="w-5 h-5"></i></div>
+                    1. Pemrosesan File (Client-Side)
+                </h2>
                 <p>Hal terpenting yang perlu Anda ketahui tentang alat kami adalah: <strong>Kami tidak pernah mengunggah, menyimpan, atau menyalin file PDF Anda ke server kami.</strong></p>
                 <p>Seluruh proses kompresi ukuran PDF dilakukan secara 100% di perangkat Anda sendiri (Client-Side) menggunakan memori browser Anda (JavaScript/WebAssembly). Begitu Anda menutup tab browser, semua data kompresi akan hilang secara permanen dari memori RAM perangkat Anda.</p>
 
-                <h2 class="text-xl font-bold text-slate-800 mt-8">2. File Log</h2>
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-800 mt-10 mb-4 flex items-center gap-2">
+                    <div class="bg-indigo-100 p-1.5 rounded-lg text-indigo-600 shrink-0"><i data-lucide="file-text" class="w-5 h-5"></i></div>
+                    2. File Log
+                </h2>
                 <p>GetShrink mengikuti prosedur standar menggunakan file log. File-file ini mencatat pengunjung ketika mereka mengunjungi situs web. Informasi yang dikumpulkan oleh file log termasuk alamat protokol internet (IP), jenis browser, Internet Service Provider (ISP), stempel tanggal dan waktu, halaman rujukan/keluar, dan mungkin jumlah klik. Ini tidak terkait dengan informasi apa pun yang dapat diidentifikasi secara pribadi.</p>
 
-                <h2 class="text-xl font-bold text-slate-800 mt-8">3. Cookie dan Web Beacon</h2>
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-800 mt-10 mb-4 flex items-center gap-2">
+                    <div class="bg-emerald-100 p-1.5 rounded-lg text-emerald-600 shrink-0"><i data-lucide="cookie" class="w-5 h-5"></i></div>
+                    3. Cookie dan Web Beacon
+                </h2>
                 <p>Seperti situs web lainnya, GetShrink menggunakan 'cookie'. Cookie ini digunakan untuk menyimpan informasi termasuk preferensi pengunjung, dan halaman di situs web yang diakses atau dikunjungi pengunjung. Informasi tersebut digunakan untuk mengoptimalkan pengalaman pengguna dengan menyesuaikan konten halaman web kami berdasarkan jenis browser pengunjung dan/atau informasi lainnya.</p>
 
-                <h2 class="text-xl font-bold text-slate-800 mt-8">4. Mitra Periklanan Google AdSense</h2>
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-800 mt-10 mb-4 flex items-center gap-2">
+                    <div class="bg-orange-100 p-1.5 rounded-lg text-orange-600 shrink-0"><i data-lucide="megaphone" class="w-5 h-5"></i></div>
+                    4. Mitra Periklanan Google AdSense
+                </h2>
                 <p>Kami menggunakan Google AdSense sebagai vendor pihak ketiga di situs kami. AdSense menggunakan cookie, yang dikenal sebagai cookie DART, untuk menayangkan iklan kepada pengunjung situs kami berdasarkan kunjungan mereka ke situs kami dan situs lain di internet.</p>
-                <p>Namun, pengunjung dapat memilih untuk menolak penggunaan cookie DART dengan mengunjungi Kebijakan Privasi jaringan iklan dan konten Google di URL berikut – <a href="https://policies.google.com/technologies/ads" target="_blank" class="text-blue-600 hover:underline">https://policies.google.com/technologies/ads</a></p>
+                <p>Namun, pengunjung dapat memilih untuk menolak penggunaan cookie DART dengan mengunjungi Kebijakan Privasi jaringan iklan dan konten Google di URL berikut – <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors font-medium">https://policies.google.com/technologies/ads</a></p>
 
-                <h2 class="text-xl font-bold text-slate-800 mt-8">5. Persetujuan</h2>
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-800 mt-10 mb-4 flex items-center gap-2">
+                    <div class="bg-purple-100 p-1.5 rounded-lg text-purple-600 shrink-0"><i data-lucide="check-circle" class="w-5 h-5"></i></div>
+                    5. Persetujuan
+                </h2>
                 <p>Dengan menggunakan situs web kami, Anda dengan ini menyetujui Kebijakan Privasi kami dan menyetujui syarat dan ketentuannya.</p>
             </div>
         </div>
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-6 mt-12">
-        <div class="container mx-auto px-4 text-center text-sm">
-            <p>© 2026 GetShrink. Hak Cipta Dilindungi.</p>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 sm:py-12 border-t-4 border-blue-600 z-10 relative mt-auto">
+        <div class="container mx-auto px-4 max-w-5xl flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start gap-2 text-2xl font-bold text-white mb-2 sm:mb-3">
+                    <i data-lucide="file-minus-2" class="w-6 h-6 text-blue-500"></i>
+                    GetShrink
+                </div>
+                <p class="text-xs sm:text-sm">© 2026 Hak Cipta Dilindungi. Solusi kompresi file offline paling aman.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium">
+                <a href="privacy-policy.html" class="text-white hover:text-blue-400 transition-colors">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="mailto:admin@getshrink.my.id" class="hover:text-white transition-colors">Contact</a>
+            </div>
         </div>
     </footer>
 
